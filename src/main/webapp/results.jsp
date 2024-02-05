@@ -14,7 +14,7 @@
 <body>
 	<img src="dog-banner-image.png" alt="dogs">
 	<br />
-	<h4>Your Dog's Size Is:</h4>
+	<h4>The Dog's Size Is:</h4>
 	<h2>${dog.getSize()}</h2>>
 	<a href="index.jsp">Find the size of another dog</a>
 	<br /><br /><br /><br />

@@ -10,6 +10,8 @@ package model;
  */
 public class Dog {
 	// attributes
+	private String name;
+	private String breed;
 	private int weight;
 	private String size;
 	
@@ -20,14 +22,36 @@ public class Dog {
 	}
 	
 	// Constructor with weight as parameter
+	public Dog(String name, String breed) {
+		super();
+		this.name = name;
+		this.breed = breed;
+	}	
+	
+	public Dog(String name, String breed, int weight) {
+		super();
+		this.name = name;
+		this.breed = breed;
+		this.weight = weight;
+		setSize(weight);
+	}
+
 	public Dog(int weight) {
 		super();
 		this.weight = weight;
 		setSize(weight);
 	}
-
 	
+
 	// getters
+	public String getName() {
+		return name;
+	}
+
+	public String getBreed() {
+		return breed;
+	}
+
 	public int getWeight() {
 		return weight;
 	}
@@ -38,10 +62,18 @@ public class Dog {
 
 	
 	// setters
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+	
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
-
 	
 	/**
 	 * figures the size of a dog given their weight
